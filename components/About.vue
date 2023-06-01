@@ -1,18 +1,18 @@
 <!-- Please remove this file from your project -->
 <template>
     <div class="relative flex items-top justify-center min-h-screen bg-gray-100 sm:items-center sm:pt-0">
-        <NuxtLogo />
+        <Tutorial />
     </div>
 </template>
 
 <script>
-import NuxtLogo from './NuxtLogo.vue';
+import Tutorial from './Tutorial.vue';
 
 
 export default {
 
     name: "NuxtAbout",
-    components: { NuxtLogo },
+    components: { Tutorial },
     setup: () => { },
     methods: {
         mound: () => {
@@ -20,7 +20,7 @@ export default {
         }
     },
     computed: {
- 
+
     },
     // lifecycle
     beforeCreate: function () { },

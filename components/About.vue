@@ -2,6 +2,7 @@
 <template>
     <div class="relative flex items-top justify-center min-h-screen bg-gray-100 sm:items-center sm:pt-0">
         <Tutorial />
+        <button @click="showToast">Show toast</button>
     </div>
 </template>
 
@@ -17,6 +18,9 @@ export default {
     methods: {
         mound: () => {
             console.log("components mounted");
+        },
+        showToast() {
+            this.$toast.error("hello");
         }
     },
     computed: {
@@ -36,3 +40,6 @@ export default {
 
 }
 </script>
+<style scoped>
+@import "vue-toastification/dist/index.css";
+</style>

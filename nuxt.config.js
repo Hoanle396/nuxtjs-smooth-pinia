@@ -42,6 +42,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@pinia/nuxt',
+    "vue-toastification/nuxt"
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -64,5 +65,22 @@ export default {
       'defineStore', // import { defineStore } from 'pinia'
       ['defineStore', 'definePiniaStore'], // import { defineStore as definePiniaStore } from 'pinia'
     ],
+  },
+
+  toast: {
+    position: "bottom-right",
+    timeout: 3048,
+    closeOnClick: true,
+    pauseOnFocusLoss: true,
+    pauseOnHover: true,
+    draggable: true,
+    draggablePercent: 0.6,
+    showCloseButtonOnHover: true,
+    hideProgressBar: false,
+    closeButton: "button",
+    icon: true,
+    rtl: false,
+    transition: "Vue-Toastification__slideBlurred",
+    maxToasts: 20,
   },
 }

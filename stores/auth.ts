@@ -4,7 +4,7 @@ import { defineStore } from "pinia";
 
 export const useAuth = defineStore("auth", {
   state: () => ({
-    auth: Cookie ? JSON.parse(Cookie.get("auth")??'{}') : null,
+    auth: Cookie && Cookie.get("auth") ? JSON.parse(Cookie.get("auth")) : null,
   }),
   getters: {
     getAuth(state) {

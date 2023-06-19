@@ -2,7 +2,7 @@ export interface IBoardCard {
   className: string;
   style: string;
 }
-export interface BaseResponse {
+export interface BaseEntity {
   ID: number;
   CreatedAt: string;
   UpdatedAt: string;
